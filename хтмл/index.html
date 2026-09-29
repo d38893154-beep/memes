@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIANA NEON MEDIA — SMM, Реклама & Доставка из Китая</title>
+    <meta name="description" content="DIANA NEON MEDIA — SMM, реклама, продвижение брендов и помощь с доставкой товаров из Китая.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Живой неоновый фон Canvas -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Загрузочный Экран -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="glow-text">DIANA NEON MEDIA</h1>
+            <p class="loader-sub">SMM • ADVERTISING • CHINA DELIVERY</p>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шапка / Навигация -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">DIANA<span>NEON</span></a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">ГЛАВНАЯ</a>
+                <a href="#smm" class="nav-link">SMM</a>
+                <a href="#packages" class="nav-link">УСЛУГИ</a>
+                <a href="#china" class="nav-link">КИТАЙ</a>
+                <a href="#about" class="nav-link">ОБО МНЕ</a>
+                <a href="#game" class="nav-link">ИГРА</a>
+                <a href="#contacts" class="btn btn-primary btn-sm mobile-btn">НАПИСАТЬ ДИАНЕ</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Кнопка Музыки -->
+                <button id="musicToggleBtn" class="music-btn" aria-label="Включить фоновую музыку">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">MUSIC OFF</span>
+                </button>
+                <a href="#contacts" class="btn btn-primary desktop-only">НАПИСАТЬ ДИАНЕ</a>
+                <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный Экран (Hero) -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge-neon">DIANA / DIGITAL MARKETING</span>
+                    <h1 class="hero-title">
+                        ТВОЙ БРЕНД.<br>
+                        ТВОЯ <span class="text-gradient">РЕКЛАМА.</span><br>
+                        ТВОЙ РЕЗУЛЬТАТ.
+                    </h1>
+                    <p class="hero-subtitle">
+                        SMM, реклама и помощь с доставкой товаров из Китая — в одном месте.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#smm" class="btn btn-primary">ЗАКАЗАТЬ РЕКЛАМУ</a>
+                        <a href="#china" class="btn btn-secondary">ДОСТАВКА ИЗ КИТАЯ</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="neon-card-frame">
+                        <img src="images/diana-hero.jpg" alt="Диана - SMM специалист" class="hero-img" onerror="this.style.display='none'; document.getElementById('heroAbstract').style.display='flex';">
+                        <div id="heroAbstract" class="hero-abstract" style="display: none;">
+                            <div class="abstract-ring"></div>
+                            <div class="abstract-core">DNM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел SMM & ADVERTISING -->
+        <section id="smm" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">SMM & ADVERTISING</h2>
+                    <p class="section-desc">Помогаю бизнесу выглядеть заметно, привлекать аудиторию и превращать социальные сети в инструмент продаж.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="glass-card service-card">
+                        <div class="card-icon">01</div>
+                        <h3>Ведение социальных сетей</h3>
+                        <p>Полный цикл работы с профилем: визуальная концепция, тексты, сторис и единый узнаваемый стиль бренда.</p>
+                    </div>
+                    <div class="glass-card service-card">
+                        <div class="card-icon">02</div>
+                        <h3>Создание контента</h3>
+                        <p>Фото, Reels, макеты и сценарии, которые цепляют внимание и вызывают желание купить с первых секунд.</p>
+                    </div>
+                    <div class="glass-card service-card">
+                        <div class="card-icon">03</div>
+                        <h3>Настройка рекламы</h3>
+                        <p>Точный таргетинг и рекламные кампании, приводящие целевых клиентов с минимальной стоимостью лида.</p>
+                    </div>
+                    <div class="glass-card service-card">
+                        <div class="card-icon">04</div>
+                        <h3>Продвижение бренда</h3>
+                        <p>Комплексные стратегии медийности, коллаборации, работа с блогерами и повышение лояльности.</p>
+                    </div>
+                    <div class="glass-card service-card">
+                        <div class="card-icon">05</div>
+                        <h3>Аналитика и развитие</h3>
+                        <p>Регулярные отчёты, отслеживание KPI, срез аудитории и гибкая корректировка стратегии ростов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел SMM PACKAGES -->
+        <section id="packages" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">SMM PACKAGES</h2>
+                    <p class="section-desc">Выберите удобный формат сотрудничества для вашей компании</p>
+                </div>
+                <div class="packages-grid">
+                    <div class="glass-card package-card">
+                        <div class="package-header">
+                            <h3>START</h3>
+                            <div class="price">от $300 <span>/ мес</span></div>
+                            <p class="pkg-sub">Для небольшого бизнеса</p>
+                        </div>
+                        <ul class="pkg-list">
+                            <li>Контент-план</li>
+                            <li>Публикации (12 постов)</li>
+                            <li>Базовое оформление</li>
+                            <li>Консультация по запуску</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn-secondary full-width">ВЫБРАТЬ START</a>
+                    </div>
+
+                    <div class="glass-card package-card featured">
+                        <div class="package-tag">POPULAR</div>
+                        <div class="package-header">
+                            <h3>PRO</h3>
+                            <div class="price">от $600 <span>/ мес</span></div>
+                            <p class="pkg-sub">Для активного продвижения</p>
+                        </div>
+                        <ul class="pkg-list">
+                            <li>Глубокий контент-маркетинг</li>
+                            <li>Настройка и ведение рекламы</li>
+                            <li>Аналитика и отчётность</li>
+                            <li>Пошаговая стратегия роста</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn-primary full-width">ВЫБРАТЬ PRO</a>
+                    </div>
+
+                    <div class="glass-card package-card">
+                        <div class="package-header">
+                            <h3>MAX</h3>
+                            <div class="price">от $1000 <span>/ мес</span></div>
+                            <p class="pkg-sub">Для полноценного продвижения</p>
+                        </div>
+                        <ul class="pkg-list">
+                            <li>Полный SMM «под ключ»</li>
+                            <li>Масштабная таргет-реклама</li>
+                            <li>Премиум видео и фото контент</li>
+                            <li>Глубокая аналитика 24/7</li>
+                            <li>Индивидуальная стратегия</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn-secondary full-width">ВЫБРАТЬ MAX</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел ДОСТАВКА ИЗ КИТАЯ -->
+        <section id="china" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CHINA DELIVERY</h2>
+                    <p class="section-subtitle-lg">Товар из Китая — ближе, чем кажется.</p>
+                    <p class="section-desc">Помощь с перевозкой товаров из Китая. Удобный способ организовать доставку и не разбираться во всех этапах самостоятельно.</p>
+                </div>
+
+                <div class="china-route-visual">
+                    <span class="route-point">CHINA</span>
+                    <span class="route-line"></span>
+                    <span class="route-icon">🚚</span>
+                    <span class="route-line"></span>
+                    <span class="route-point">CENTRAL ASIA</span>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="glass-card step-card">
+                        <div class="step-num">01</div>
+                        <h4>Вы выбираете товар</h4>
+                        <p>Находите позицию или передаёте контакты поставщика.</p>
+                    </div>
+                    <div class="glass-card step-card">
+                        <div class="step-num">02</div>
+                        <h4>Товар отправляется из Китая</h4>
+                        <p>Приём на складе, консолидация и упаковка груза.</p>
+                    </div>
+                    <div class="glass-card step-card">
+                        <div class="step-num">03</div>
+                        <h4>Организуется перевозка</h4>
+                        <p>Контроль логистики, таможенного транзита и документов.</p>
+                    </div>
+                    <div class="glass-card step-card">
+                        <div class="step-num">04</div>
+                        <h4>Вы получаете товар</h4>
+                        <p>Безопасная вручение груза в вашем городе.</p>
+                    </div>
+                </div>
+
+                <!-- Калькулятор Доставки -->
+                <div class="glass-card calc-box">
+                    <h3 class="calc-title">РАСЧЁТ ДОСТАВКИ</h3>
+                    <form id="calcForm" class="calc-form">
+                        <div class="form-group">
+                            <label for="weight">Вес товара (кг)</label>
+                            <input type="number" id="weight" placeholder="Например: 15" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="places">Количество мест</label>
+                            <input type="number" id="places" placeholder="Например: 2" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Тип товара</label>
+                            <select id="type">
+                                <option value="1.0">Одежда и текстиль</option>
+                                <option value="1.3">Электроника и гаджеты</option>
+                                <option value="1.1">Обувь и аксессуары</option>
+                                <option value="1.2">Оборудование / Прочее</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">РАССЧИТАТЬ</button>
+                    </form>
+                    <div id="calcResult" class="calc-result" style="display: none;">
+                        <div class="result-label">Предварительный расчёт:</div>
+                        <div id="calcPrice" class="result-price">$0</div>
+                        <p class="calc-disclaimer">Расчёт является предварительным. Итоговая стоимость зависит от параметров груза и условий перевозки.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел ABOUT DIANA -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-col">
+                        <h2 class="section-title text-left">ABOUT DIANA</h2>
+                        <p class="about-text">
+                            Меня зовут Диана. Я занимаюсь продвижением проектов в социальных сетях, рекламой и организацией доставки товаров из Китая. Моя задача — сделать сложные процессы понятными и удобными для клиента.
+                        </p>
+                        
+                        <!-- Счётчики статистики -->
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-num" data-target="100">+0</div>
+                                <div class="stat-label">проектов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num" data-target="50">+0</div>
+                                <div class="stat-label">рекламных кампаний</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num-text">24/7</div>
+                                <div class="stat-label">на связи</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num" data-target="3">+0</div>
+                                <div class="stat-label">направления</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card-col">
+                        <div class="glass-card neon-card-diana">
+                            <div class="diana-avatar-box">
+                                <img src="images/diana-about.jpg" alt="Диана" onerror="this.style.display='none'; document.getElementById('dianaPlaceholder').style.display='block';">
+                                <div idd="dianaPlaceholder" class="diana-placeholder" style="display:none;">D</div>
+                            </div>
+                            <h3 class="diana-card-title">DIANA</h3>
+                            <p class="diana-card-subtitle">SMM • ADS • CHINA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел ОТЗЫВЫ -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">CLIENT FEEDBACK</h2>
+                </div>
+                <div class="glass-card feedback-placeholder">
+                    <div class="feedback-icon">💬</div>
+                    <p class="feedback-text">Здесь будут размещены реальные отзывы клиентов.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел МИНИ-ИГРА -->
+        <section id="game" class="section game-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">DIANA NEON DELIVERY</h2>
+                    <p class="section-desc">Управляйте неоновым грузовиком, собирайте посылки и избегайте препятствий в ночном городе!</p>
+                </div>
+
+                <div class="glass-card game-wrapper">
+                    <div class="game-scoreboard">
+                        <div class="score-box">SCORE: <span id="gameScore">0000</span></div>
+                        <div class="score-box">DELIVERIES: <span id="gameDeliveries">00</span></div>
+                        <div class="score-box">HIGH: <span id="gameHighScore">0000</span></div>
+                    </div>
+
+                    <div class="canvas-container">
+                        <canvas id="gameCanvas" width="800" height="450"></canvas>
+                        
+                        <div id="gameOverlay" class="game-overlay">
+                            <h3 id="overlayTitle">DIANA NEON DELIVERY</h3>
+                            <p id="overlayDesc">Собирайте коробки (📦) и везите их в неоновую зону! Избегайте луж и преград.</p>
+                            <button id="startGameBtn" class="btn btn-primary">ИГРАТЬ</button>
+                        </div>
+                    </div>
+
+                    <!-- Мобильный контроллер для игры -->
+                    <div class="touch-controls">
+                        <div class="touch-row">
+                            <button class="touch-btn" id="btnUp">↑</button>
+                        </div>
+                        <div class="touch-row">
+                            <button class="touch-btn" id="btnLeft">←</button>
+                            <button class="touch-btn" id="btnDown">↓</button>
+                            <button class="touch-btn" id="btnRight">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел КОНТАКТЫ -->
+        <section id="contacts" class="section">
+            <div class="container">
+                <div class="glass-card contact-card">
+                    <h2 class="section-title">СВЯЗАТЬСЯ С ДИАНОЙ</h2>
+                    <p class="section-desc">Готовы запустить рекламу или привезти товар из Китая? Напишите прямо сейчас!</p>
+                    <div class="contact-links">
+                        <a href="https://t.me/" target="_blank" rel="noopener" class="btn btn-primary">TELEGRAM</a>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn-secondary">INSTAGRAM</a>
+                        <a href="https://wa.me/" target="_blank" rel="noopener" class="btn btn-primary">WHATSAPP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 DIANA NEON MEDIA. Все права защищены.</p>
+            <p class="footer-slogan">«Продвигаю. Рекламирую. Доставляю.»</p>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
